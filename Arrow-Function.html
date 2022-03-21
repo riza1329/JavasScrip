@@ -1,0 +1,57 @@
+<html>
+<script>
+    // Arrow Function
+    // Arrow function adalah alternatif pembuatan function yang lebih sederhana dari function biasanya 
+    // Namun terdapat limitasi dan juga tidak bisa digunakan disemua situasi 
+    // Dinamakan arrow function karena menggunakan tanda => (seperti tanah )
+    // Berikut contoh beberapa kekurangan arrow function
+    // tidak memiliki fitur arguments object 
+    // tidak bisa menggunakan function generator
+    // tidak bisa mengakses this (yang nanti akan dibahas di function di object)
+    // tidak bisa mengakses super (yang nanti akan dibahas dijavaScrip object oriented programing)
+
+    // const sayHello = (name) => {
+    //     const say = `Hello $ {name}`;
+    //     console.info(say);
+    // }
+
+    // sayHello("Riza")
+
+
+    // Arrow Function tanpa block
+
+
+    const sayHello = (name) => console.info(`Hello ${name}`);
+    sayHello("Riza");
+
+    // const sum = (first, second) => {
+    //     return first + second;
+    // }
+
+    const sum = (first, second) => first + second;
+    console.info(sum(100, 100));
+
+    function giveMeName(callback) {
+        callback("Riza");
+    }
+    // // Anonymous function
+    // giveMeName(function (name)) {
+    //     console.info(`Hello ${name}`);
+    // })
+
+    // Arrow Function
+    giveMeName(name => console.info(`Hello ${name}`));
+
+
+    // Jika sebuah arrow function isinya, misal hanya satu baris
+    // Kita bisa membuat arrow function tanpa harus menggunakan block
+
+    // Arrow function return velue
+    // arrow function bisa mengembalika value, sama seperti function biasanya
+    // jika menggunakan block, maka kita perlu menggunakan kata kunci return
+    // jika tidak menggunkan block, kita tidak bisa perlu menggunakan kata kunci return
+
+    // Kode : Arrow function sebagai parameter
+</script>
+
+</html>

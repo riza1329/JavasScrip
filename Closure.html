@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clousure</title>
+</head>
+
+<body>
+    <script>
+        // Clousure adalah kombinasi function dan bundel referensi ke data disekitarnya
+        // Setidaknya agak membingunkan, apalagi yang baru pertama belajar
+        // Kita sudah tahu bahwa local scope, tidak bisa diakses dilur scope nya
+        // Dengan kemampuan clousure, kita bisa membuat sebuah function dilocal  scope dan referensi ke data disekitar  local scope tersebut, keluar scopenya
+
+        function createAdder(value) {
+            const owner = "Eko";
+
+            function add(param) {
+                console.info(owner)
+                return value + param;
+            }
+            return add;
+        }
+
+        const addTwo = createAdder(2);
+
+        console.info(addTwo(10))
+        console.info(addTwo(20))
+        console.info(addTwo(10))
+        console.info(addTwo(20))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strict Mode</title>
+</head>
+<body>
+   <script>
+
+       // Strict Mode 
+       // Saat kita melakukan kode program JavaScrip, secara default kode program kit berjalan dalam mode tidak strict, atau istilahnya sloppy mode
+       // pada ECMAscrip5, diperkenalkan mode strict, dimana ketika strict mode dijalankan, maka akan merubah beberapa cara kerja diJavaScrip, serperti
+            /*Merubah beberapa javascrip error dari yang  tadinya silent error, menjadi throw error (terlihat) */
+            /*merperbaiki beberapa kesalahan engine javascrip untuk optimasi*/
+            /*menolak beberapa kdoe perintah yang kedepannya akan digunakan di ECMAScrip */
+            
+       function userStrictMode () {
+           'use strict'
+           const person = {
+               firtName: "Eko"
+           };
+           // error
+           with (person) {
+               consol.info(firstName);
+           }
+       };
+
+       userStrictMode();
+   </script>
+</body>
+</html>
