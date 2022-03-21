@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x; // declaration  statment
+        x = 2 * 10; //expression statement
+
+        function arithmenicOperation(param) {
+            let x //  declaration  statment
+            x = 2 + 2 * 10 //expression statement
+            console.log(x); // 22
+        }
+        arithmenicOperation();
+
+        // arithmetic operation
+
+        var a = 3;
+        var x = (100 + 50) * a;
+        console.log(x);
+
+        // Modulus Operation
+        console.log(12 % 5); // 2
+        console.log(-1 % 2); // -1
+        console.log(1 % -2); // 1
+        console.log(NaN % 2); //NaN
+        console.log(1 % 2); // 1
+        console.log(2 % 3); // 2
+        console.log(-4 % 2); // -0
+        console.log(5.5 % 2); // 1
+
+        // Addition Operation
+        console.log(1 + 2); // 3
+        console.log(true + 1); // true
+        console.log(false + false) // 0
+        console.log(5 + 'foo') // 5foo
+        console.log('foo' + false) //  foofalse
+        console.log('foo' + 'bar') // "foobar"
+
+        // Subtraction Operation
+        console.log(5 - 3); // 2
+        console.log(3 - 5); // -2
+        console.log('foo' - 3) // NaN
+
+        //  Division Operation pembagian
+        console.log(1 / 2); // 0.5
+        console.log(1.0 / 2.0);
+        console.log(2.0 / 2.0);
+        console.log(2.0 / 0.0);
+        console.log(2.0 - 0.0);
+
+        // Multiplication Operation
+        console.log(2 * 2); // 4
+        console.log(-2 * 2); // -4
+        console.log(Infinity * 0); // NaN
+        console.log(Infinity * Infinity); // Infinity
+        console.log('foo' * 2); //NaN
+
+        // Exponentiation 
+        console.log(2 ** 3); // 8
+        console.log(3 ** 2); // 9
+        console.log(3 ** 2.5); //
+        console.log(10 ** -1); // 0.1
+        console.log(NaN ** 2); // NaN
+        console.log(2 ** (3 ** 2)); // 512
+        console.log(2 ** (3 ** 2)); // 512
+        console.log((2 ** 3) ** 2); // 64
+
+        // Increment & Decrement Operation
+
+        var a = 5,
+            b = 5;
+        var a = ++a;
+        var b = --b;
+        console.log(a);
+        console.log(b);
+
+        // Equality Operator
+        const x = 5;
+        console.log(x == 8); //false
+
+        const x = 5;
+        console.log(x == 5) // true
+
+        console.log(x === 5) // true
+        console.log(x === '5') // false
+
+        // Inequality Operator
+
+        var x = 5;
+
+        console.log(x != 8); // true
+        console.log(x != 5); // false
+        console.log(x !== 5); // fasle
+        console.log(x !== '5') // true
+
+        //  Greater Than Operator
+
+        var x = 5;
+        console.log(x > 6); // fasle
+        console.log(x > 5); // false
+        console.log(x > 4); // true
+
+        // Les Then Operator
+        var x = 5;
+        console.log(x < 6); // true
+        console.log(x < 5); // false
+        console.log(x < 4); // false
+
+        // Greater Than or Equal Operator
+
+        var x = 5;
+        console.log(x >= 6); // fasle
+        console.log(x >= 5); // false
+        console.log(x >= 4); // true
+        //  Less Than or Equal Operator
+
+        var x = 5;
+        console.log(x <= 6); // true
+        console.log(x <= 5); // true
+        console.log(x <= 4); // false
+
+        // Operator OR
+
+        let hour = 8;
+        if (hour < 9 || hour > 17) {
+            console.log('Warung masih tutup');
+        }
+
+        let hour = 04;
+        let minute = 30;
+
+        // Operator AND
+        if (hour == 04 && minute == 30) {
+            console.log('Alarm on!');
+        }
+
+        // Operator NOT
+        console.log(!true); // fales
+        console.log(!0); // true
+
+        // Strings
+        var name = "Jojo Indro";
+
+        // numbers
+
+        var age = 25;
+        var price = 1.51;
+
+
+        // boolean
+
+        var isExist = true;
+
+        // null
+
+        var object = null;
+
+        // undefined
+
+        var flag = undefined;
+        var ref; // setara dengan kode diatas
+
+
+        var animal1 = "gajah";
+        var animal2 = animal1;
+
+        console.log(animal1);
+        console.log(animal2);
+
+        animal1 = "godzila"
+        console.log(animal1);
+        console.log(animal2);
+
+
+        // Immutable
+
+        var x = "hello";
+        console.log(x.toUpperCase());
+        console.log(x); // hello
+
+        // Reference Types dalam object
+
+        let Gun = {
+            name: "GGF",
+            ucapSalam: function() {
+                alert("Hello World");
+
+            }
+        };
+        Gun.ucapSalam();
+
+        let str = "Hello";
+        console.log(str.toUpperCase());
+
+        // Infinity
+
+        var x = 2 / 0; // x memproduksi Infinity
+        var y = -2 / 0; // y memproduksi -Infinity
+
+        console.log(x);
+        console.log(x);
+
+        var myNumber = 2;
+        while (myNumber != Infinity) {
+            //Excute until Infinity
+            console.log((myNumber = myNumber * myNumber));
+        }
+
+        // Untuk memeriksa angka yang diberikan tidak infinity kita dapat menggunakan method
+        // isFinite() yang dimiliki oleh object Number
+
+        function div(x) {
+            if (Number.isFinite(1000 / x)) {
+                return "Number is NOT Infinity";
+            }
+            return "Number is Infinity!";
+        }
+
+        console.log(div(0));
+        // expected output: "Number is Infinity"
+
+        console.log(div(1));
+        // expected output: "Number is NOT Infinity"
+
+
+
+        // Maximum & Minimum Value
+
+        function multiply(x, y) {
+            if (x * y > Number.MAX_VALUE) {
+                return 'Process as Infinity';
+            }
+            return x * y;
+        }
+
+        console.log(multiply())
+
+        console.log(multiply())
+
+
+        // Max Safe Integer
+
+        var x = Number.MAX_SAFE_INTEGER + 1;
+        var y = Number.MAX_SAFE_INTEGER + 2;
+
+        console.log(Number.MAX_SAFE_INTEGER);
+
+        console.log(x);
+        console.log(x === y);
+        // expected output : true
+
+        // Safe Integer Checking
+
+        Number.isSafeInterger(3);
+        Number.isSafeInterger(Math.pow(2, 53));
+        Number.isSafeInterger(Math.pow(2, 53) - 1);
+        Number.isSafeInterger(NaN);
+        Number.isSafeInterger(infinity);
+        Number.isSafeInterger('3');
+        Number.isSafeInterger(3.1);
+        Number.isSafeInterger(3.0);
+
+        // Positive e Notation
+        let billion = 1e9; // 1 billion (1 & 9 zero )
+        // contoh lainnya:
+        // 1e3 = 1*1000
+        // 1.23e6 = 1.23*10000000
+
+        // Negative e Notation
+        let ms = 0.000001; // explicit zero
+        ms = 1e-6; // implicit zero
+
+        // 1e-3 = 1 / 1000
+        // 1.23e-6 = 1.23 / 1000000
+
+        // Numeric Conversion
+
+        parseInt('100'); // = 100
+        parseInt('2019@marketkoin.com'); // = 2018
+        parseInt('marketkoin@2019'); // NaN
+        parseInt('3.14'); // =3
+        parseInt('21 7 2018'); // =21
+        parseInt('100', 10); // = 100
+        parseInt('8', 8); // NaN
+        parseInt('15', 8); // = 13
+        parseInt('16', 16); // = 22
+        parseInt('100'); // = 100
+        parseInt('0x16'); // = 22
+        parseInt('10'); // = 10
+        parseInt('10.33'); // =10
+        parseInt('10 20 30'); // = 10
+        parseInt('10 tahun'); // = 10
+        parseInt('tahun ke 10') // = 10
+
+        // method parsefloat()
+        parseFloat("10") // returns 10
+        parseFloat("10.33") // returns 10.30
+        parseFloat("10 20 30") // return 10 20 30
+        parseFloat("10 tahun marketkoin") // return 10
+        parseFloat("tahun ke 10") // returns NaN
+
+        // Hexadecimal, Binary dan Octadecimal
+
+        let a = 0b11111111 // binary form dari 255
+        let = 0o377 // octal form darri 255
+
+        console.log(a == b); // hasilnya true, karena nilainya sa,aatau sama
+
+        // 1. Block Statements
+        {
+            statement_1;
+            statement_2;
+
+            statement_n;
+        }
+
+
+        // 2. Conditional Statements
+
+        if (condition) {
+            statement_1;
+        } else {
+            statement_2
+        }
+
+        var time = 20;
+        if (time < 20) {
+            x = "statement_1"
+        } {
+            x = "statement_2"
+        }
+
+        //  3. Ternary Operator
+        let result = condition ? value1 : value2
+
+        let message = (age < 3) ? 'Hi, baby' :
+            (age < 18) ? 'Hello ! Sweety' :
+            (age < 100) ? 'Hello prrety!' : 'Who you are ';
+        alert(message);
+
+
+        4. // Multiconditional Statement
+
+        var time = 44;
+        if (time < 20) {
+            x = "Statement_1"
+        } else if (time == 20) {
+            x = " Statement_2"
+        } else {
+            x = "Statement_3"
+        }
+
+        //  Keluaran dari kode di atas adalah : "statement_3"
+
+        // 5. Switch Style
+
+        var day = 2
+        switch (day) {
+            case 0:
+                x = "Hari ini minggu"
+                break;
+            case 1:
+                x = "Hari ini senin"
+                break;
+            case 2:
+                x = "Hari ini selasa"
+                break;
+        }
+
+        // Output 
+        // "Hari ini selasa"
+
+        //    1. While Statement
+
+        var n = 0;
+        while (n < 3) {
+            console.log(n++);
+        }
+        /* output : 0
+                    1
+                    3*/
+
+        // 2. Do … While Statement
+
+        var i = 0;
+        do {
+            i += 1;
+            console.log(i);
+        } while (i < 5)
+
+        /* output : 0
+                    1
+                    2
+                    3
+                    4
+                    5*/
+
+        // 3. For Statement
+
+        for (let index = 0; index < 5; index++) {
+            console.log("Perulangan ke " + index)
+        };
+
+        /* output : 
+   Perulangan ke 0
+   Perulangan ke 1
+   Perulangan ke 2
+   Perulangan ke 3
+   Perulangan ke 4
+                */
+
+        for (let index = 10; index < 5; index--) {
+            console.log("Perulangan ke " + index)
+        };
+
+        /* output : 
+   Perulangan ke 10
+   Perulangan ke 9
+   Perulangan ke 8
+   Perulangan ke 7
+   Perulangan ke 6
+                */
+
+        // 4. For of Statement
+
+        let arr = [1, 2, 3, 4];
+        for (let arrValue of arr) {
+            console.log(arrValue);
+        }
+        // output : 1, 2, 3, 4
+
+        // 5. For…in Statement
+
+        let arr = [10, 20, 30, 40];
+        for (let index in arr) {
+            console.log(index);
+            console.log(arr[index]);
+        }
+
+        /* output : 
+        0
+        10
+        1
+        20
+        2
+        30
+        3
+        40
+        */
+        // 6. Break Statement
+
+        for (i = 0; i < 10; i++) {
+            if (i === 3) {
+                break;
+            }
+            console.log("Perulangan ke " + 1);
+        };
+        /* output : 
+    Perulangan ke 0
+    Perulangan ke 1
+    Perulangan ke 2
+                    */
+        // 7. Continue Statement
+        for (i = 0; i < 6; i++) {
+            if (i === 3) {
+                continue;
+            }
+            console.log("Perulangan ke " + i);
+        }
+
+        /* output : 
+    Perulangan ke 0
+    Perulangan ke 1
+    Perulangan ke 2
+    Perulangan ke 3
+    Perulangan ke 4
+    Perulangan ke 5
+    */
+
+        // 8. Labeled Statement
+
+        var str = "";
+
+        loop1;
+        for (var i = 0; i < 5; i++) {
+            if (i === 1) {
+                continue loop1;
+            }
+            str = str + i;
+            console.log(str)
+        }
+
+        // output
+        // 0
+        // 02
+        // 023
+        // 0234
+
+        //  1. Function?
+        //  Function Declaration
+
+        function name(paraMeter) {
+            statement
+        };
+        // Function Expression
+
+        let name = function(paraMeter) {
+            statement
+        };
+
+        // Arrow Function Expression
+
+        let name = (paraMeter) => {
+                statement
+            }
+            // 2. First-class Function
+            // Global Execution Context
+
+        var a = 10; // variabel berada dalam global content
+
+        (function() {
+            var b = 20; // variabel lokal berada dalam global content 
+        })();
+
+        console.log(a); //10
+        console.log(b); // "b" belum didefinisikan
+
+        // Execution Stack Simulation
+
+        let hello = 'Hello World';
+
+        function executonContentpertama() {
+            console.log('Di dalam functuion');
+            executonContentkedua();
+            console.log('Di dalam function');
+        }
+
+        function executonContentkedua() {
+            console.log('Di dalam function');
+
+        }
+        executonContentpertama();
+        console.log('Di dalam Global Execution Content');
+
+        // 3. Simple Function
+
+        function sayHello() {
+            console.log('Hello!');
+            console.log('Riz Aminudin');
+        }
+        sayHello();
+
+
+        /*
+        Hello!
+        Riza aminudin
+        */
+
+        // 4. Function Parameter
+
+        function tampilkanPesan(from, text) {
+            console.log(from + ':' + text);
+        }
+
+        tampilkanPesan('Kaiz', 'Hello')
+        tampilkanPesan('Maudy', 'What up')
+
+        /*
+        Kaiz: Hello
+        Maudy: What up
+        */
+
+        // 5. Function Return
+
+        function sum(a, b) {
+            return a + b;
+        }
+
+        let result = sum(1, 2);
+        console.log(result); // 3
+
+        function sum(a, b) {
+            console.log('message 1');
+            return a + b;
+            console.log('message 2');
+
+
+        }
+
+        let result = sum(1, 2);
+        console.log(result); // 3
+
+        // 6. Function For Function Parameter
+
+        function tampilkanPesan(from, text = test()) {
+            console.log(from + ':' + text);
+        }
+
+        function test() {
+            return 'hello';
+        }
+
+        tampilkanPesan('Maudy')
+            //  7. Function & Local Variable
+
+        function tampilkanPesan() {
+            let message = "Hello, I'm message variabel inside function";
+            //  local
+            console.log(message);
+        }
+        tampilkanPesan();
+        console.log(message);
+        // <-- Error! ReferenceError: message is not defined
+
+
+        //  8. Function & Outer Variable
+
+        let userName = 'Gun Gun Febrianza';
+
+        function tampilkanPesan() {
+
+            let message = 'Hello,' + userName;
+            console.log(message);
+
+        }
+        tampilkanPesan(); // Hello , Gun Gun Febrianza
+
+        // 9. Callback Function
+
+        function greeting(name) {
+            console.log('Hello,' + name);
+        }
+
+        function ProcessUserInput(Callback) {
+            var name = 'Gun Gun Febrianza';
+            Callback(name);
+        }
+
+        ProcessUserInput(greeting);
+        //  Hello Gun Gun Febrianza
+
+        // 10. Arrow Function
+
+        let sum = (a, b) => a + b;
+        /* setara dengan 
+        let sum = function (a,b) {
+            return a+b;
+
+        };
+        */
+
+        console.log(sum(1, 2)); // 3
+
+        // 11. Multiline Arrow Function
+
+        let sum = (a, b) => {
+            // curly brace untuk mebuat multipleline functuin
+            let result = a + b;
+            return result; // gunakan return untuk memproduksi hasul
+
+        };
+
+        console.log(sum(1, 2)); // 3
+
+        // 12. Anonymous Function
+
+        var x = function(a, b) {
+            return a * b;
+        };
+        console.log(x(4, 3)); //12
+
+        // 13. Function Constructor
+
+        function UserCredensial(username, password) {
+            this.username = username;
+            this.password = password;
+        };
+
+        // membuat object menggunakan function constructor gunakan keyword new :
+
+        const user = new UserCredensial("Maudy", "Indonesia2020");
+
+        console.log(user);
+        //  UserCredensial {'username', 'Maudy', 'password' ,'Indonesia2020'}
+        console.log(user.username); // Maudy
+        user.log(user.password) // Indonesia2020
+
+        /* Cara ini dapat kita gunakan jika ingin membuat function yang dinamis, namun memiliki
+        permasalahan keamanan dan performance */
+
+        var rekomendasiFunction = function expression(a, b) {
+            return a * b;
+        };
+
+        // 14. Function As Expression
+
+        function myFuction(a, b) {
+            return a * b;
+        }
+        var x = myFuction(4, 3) * 2; // expresion
+        console.log(x);
+
+        // 15. Nested Function
+
+        function add() {
+            var counter = 0;
+
+            function plus() {
+                counter += 1;
+
+            }
+            plus();
+            return counter;
+        }
+        console.log(add());
+
+
+        // 16. Argument Object
+
+        function sumAll() {
+            var i;
+            var sum = 0;
+
+            for (
+                i = 0; i < arguments.length; i++
+            ) {
+                sum += arguments[i];
+            }
+            return sum;
+        }
+        console.log(sumAll(1, 123, 500, 155, 44, 88))
+            // 871
+
+        // 17. This Keyword
+
+        function account(username, password) {
+            this.username = username;
+            this.password = password;
+            this.captcha = 9998;
+        }
+
+        let myaccount = new account('rizboy1st@gmail.com', 'test1234');
+        console.log(myaccount);
+        console.log(typeof myaccount);
+        console.log(myaccount.captcha);
+
+        // 18. Call & Apply Function
+
+        var person = {
+            fullName: function() {
+                return this.firstName + '' + this.lastName + ',' + city + ',' + country;
+
+            }
+        };
+
+        var person1 = {
+            firstName: 'Nikolaj',
+            lastName: 'Vestorp'
+        };
+
+        var x = person.fullName.apply(person1['antares', 'Denmark']);
+        var x = person.fullName.call(person1, );
+        console.log(x);
+
+
+        /*ada object Food kita mengeksekusi method call menggunakan
+        object Product sehingga object Food memiliki properties yang 
+        dimiliki oleh object Product.
+        */
+
+        function Product(name, price) {
+            this.name = name;
+            this.price = price;
+        }
+
+        function food(name, price) {
+            Product.call(this, name, price);
+            this.category = 'food';
+        }
+
+        var x = new food('cheese', 5);
+
+        console.log(x.name); // cheese
+        console.log(x.category); // food
+
+        // Explicit Binding
+        /*
+        Cara kerja Call & Apply memang identik.
+        perbedaanya pada method Call,
+        parameter yang dapat diterima adalah argument list :
+            */
+        var x = person.fullName.call(person1, 'Kab, Rembang', 'Jawa tengah');
+        // Sementara pada method apply, parameter yang dapat diterima adalah argument list :
+        var x = person.fullName.apply(person1['Antares', 'Denmark'])
+
+
+        // Call
+
+        var person = {
+            fullName: function(city, country) {
+                return this.firstName + '' + this.lastName + ',' + city + ',' + country;
+            }
+        };
+
+        var person1 = {
+            firstName: 'Gun Gun ',
+            lastName: 'Febrianza'
+        };
+
+        var x = person.fullName.call(person1, 'Kab.Rembang', 'Indonesia');
+        console.log(x); // Gun Gun Febrianza, Bandung , Indonesia
+
+        //  // Apply
+
+        //  var person = {
+        //      fullName: function (city, country) {
+        //          return this .firstName + '' +  this.lastName + ',' + city + ',' + country;
+
+        //      }
+        //  };
+        // firstName: 'Nikolaj',
+        //      lastName: 'Vestorp'
+        //  var person1 = {
+
+        // 19. IIFE
+
+        (function() {
+            console.log('hello');
+        }());
+
+        // IIFE juga dapat menggunakan arrow function :
+
+        (() => {
+            console.log('Hello');
+
+        })
+
+        // 20. Clean Code Function
+
+        /*Always Declare Local Variable : eluruh variabel yang hanya akan digunakan di dalam sebuah function, wajib di
+        deklarasikan di dalam function tersebut. Minimalisir penggunaan global variable*/
+
+        /*Use Named Function Expression
+            Saat membuat function sangat disarankan kita tidak menggunakan function declaration
+            tetapi menggunakan named function expression. Saran ini mengikuti konvensi standar
+            Ecma Script Linter yang memiliki pengaturan func-style */
+
+        // bad
+        function foo()
+        // ...
+
+        // bad 
+        const foo = function() {
+            //..
+        };
+
+        const short = function longUniqueMoreDescriptiveLexicalFoo() {
+            // 
+        };
+        //  Use Default Parameter
+
+        function myFuction(x, y) {
+            if (y === undefined) {
+                y = 0;
+            };
+        };
+
+        //  Function is not statement
+        // bad
+        if (currentUser) {
+            function test() {
+                console.log('Nope.');
+
+            };
+        };
+
+        // good
+        let test;
+        if (currentUser)
+            test = () => {}
+
+        console.log('Yup.'); {
+
+        };
+
+        // 1. Syntax Error
+        var x = 10
+
+
+        // 2. Logical Error
+
+        var x = 10;
+        var xx = 20;
+        var result = 10 * x;
+        console.log(result);
+
+
+        // 3. Runtime Error
+
+        // var a = false
+        // if (a === true)
+        //     console.log('var a = true'); {
+
+        //     }else {
+        //         undefinedfunction()
+        //     };
+
+        // Syntax Error
+
+        // var a = false 
+        // if a (a === true) {
+        //     eval ('a + 2') // 4
+        // } else {
+        //     eval ('a + 2asd') // syntax error
+        // }
+
+        // 4. Try & Catch
+
+        try {
+            test()
+        } catch (ex) {}
+
+        try {
+            test()
+        } catch (ex) {
+            console.log('ex.name');
+            console.log('ex.messagge');
+        };
+
+        // Error Object Properties
+
+        /*Saat kita melakukan handling error menggunakan try & catch, kita dapat mengakses
+        properties yang dimiliki oleh object error yaitu name, message & trace properties.*/
+
+        try {
+            test()
+        } catch (ex) {
+            console.log('ex.name');
+            console.log('ex.messagge');
+            console.log('ex.stack');
+        };
+
+        // Finnaly
+
+        try {
+            let age = 25 // change to 1 or 6 or 40 or string {} 
+            if (age === undefined) throw "age undefined!"
+            if (age < 2) throw "reject boolean!"
+            if (age < 10) throw "too young!"
+            if (age > 35) throw "too old!"
+            if (typeof age === 'string') throw "not a number!"
+            if (typeof age === 'null') throw "not a number!"
+            if (typeof age === 'object') throw "not a number"
+
+        } catch (ex) {
+            console.log('error :' + ex);
+
+        } finally {
+            console.log("Alwaya executed")
+        }
+
+        // 5. Custom Error
+
+        function Wallet(id) {
+            this.id = id
+        };
+
+        function WalletValidation(id) {
+            if (id === undefined) {
+                try {
+                    throw new Error("WalletValidation Error:  Cant create Object Withoud ID !");
+                } catch (err) {
+                    console.log(err.message);
+                    return false
+                }
+            }
+            return true
+        }
+
+        // var mywallet = new Wallet ();
+        // console.log (mywallet.id); // undefined
+
+
+        // var mywallet = new Wallet (99);
+        // console.log (mywallet.id); // 99
+
+
+        //  Object Initializer
+
+
+        // var cantik = {firstname: 'Maudy', lastname:'Ayunda Faza','age23',haircolor :'black'};
+
+        // Object Property
+
+        // var mod = {firstname: 'Maudy', lastname:'Ayunda Faza','age23',haircolor :'black'};
+
+        // Object Method
+        // var mod = {firstname: 'Maudy', lastname:'Ayunda Faza','age23',haircolor :'black'
+        // fullname: function (){console.log("Maudy Ayunda Faza");} };
+
+
+        // Object Constructor
+
+        var person = new Object()
+        person.fistname = "Maudy";
+        person.lastname = "Ayunda Faza";
+        person.age = "23";
+        person.eyecolor = "black";
+        person
+
+
+        // Function Constructor
+
+        function person(firstname, lastname, age, eyecolor) {
+            this.fistname = fistname;
+            this.lastname = lastname;
+            this.age = age;
+            this.ayecolor = eyecolor;
+
+
+        }
+
+        // Apa itu Mutable?
+
+        // Object { firstname : "Maudy", lastname : "Ayunda Faza", age: "23", eyecolor: "Black"};
+        // maudy.age = 22
+
+        //  Object Prototype
+
+        function person(fistname, lastname, age, eyecolor) {
+            this.fistname = fistname;
+            this.lastname = lastname
+            this.age = age;
+            this.ayecolor = eyecolor;
+        }
+
+        person.prototype.skill = "singing"; // <--- prototype
+        var maudy = new Person("Maudy", "Ayunda Faza ", "23", "Black");
+
+        console.log(maudy.skill); // singing
+
+        // Getter & Setter 
+
+        var mod = {
+            fistname: 'Maudy',
+            fistname: 'Ayunda Faza',
+            age: '23',
+            haircolor: 'black',
+            get getFistName() {
+                return this.fistname
+            },
+            set setFirstName(Name) {
+                this.fistname = name;
+            }
+        }
+
+        console.log(mod.getFistName); // Maudy
+        mod.firstName = "Maudy"
+        console.log(mod.getFistName); // Rindu
+
+
+        //  Object Destructure
+
+        const mod = {
+            fistname: "Maudy",
+            lastname: "Ayunda Faza",
+            age: "23",
+            haircolor: "black",
+        };
+
+        const {
+            firstname,
+            age
+        } = mod;
+        console.log(fistname, age);
+        //output maudy 23
+
+        //  3. Custom Object Property
+
+        var person = {
+            fistname: 'Gun Gun',
+            lastname: 'Febrianza',
+
+        };
+
+        person.nationaly = 'Indonesia';
+        console.log(person);
+
+        // Access Object Property
+
+        var person = {
+            firstname: 'Gun Gun',
+            lastname: 'Febrianza',
+            age: 28,
+            eyecolor: 'black',
+            'super loyal': true
+        };
+
+        //  console.log (person..firstname + 'is ' + person.age  'years old. ');
+        //  //Gun Gun is 28 years old
+
+        //  console.log(person['firstname'] + 'is' + person ['age'] + 'yeard old.');
+
+        //  console.log (person ['super loyal ']); // true 
+
+
+        //  Delete Object Property
+
+        var person = {
+            firstname: 'Gun Gun ',
+            lastname: 'Febrianza',
+            age: 28,
+        };
+
+        // delete.person.age;
+
+        // console.log(person);
+
+
+        //  Check Object Propert
+        var person = {
+            firstname: 'Gun Gun ',
+            lastname: 'Febrianza',
+            language: 'en',
+        };
+
+        console.log('language' in person); // true
+        console.log('languages' in person); // false
+
+        // Atau memeriksanya menggunakan conditional if statement 
+
+        if ('langueages' in person === false) {
+            console.log('Properties is not exsist');
+        }
+
+        //  4. Custom Object Method
+
+        var person = {
+            firstname: 'Gun Gun ',
+            lastname: 'Febrianza',
+            fullName() {
+                return this.fistname + " " + this.lastname;
+            }
+        };
+
+        // Access Object Method
+
+        console.log(person.fullName());
+        // output : Gun Gun Febrianza
+
+        // Add Object Method
+
+        person.name = function() {
+            return this.firstName + " " + this.lastName;
+            console.log(person.name());
+        };
+
+        //  output :   Gun Gun Febrianza
+
+        //  5. Custom Object Looping
+        var person = {
+            fname: 'Gun Gun ',
+            lname: 'Febrianza',
+            age: 28,
+        };
+
+        var x;
+        for (x in person) {
+            console.log(x);
+        }
+
+        /* output : 
+            fname
+            lname
+            age
+        */
+        // Untuk mendapatkan list value dari object literal :
+
+        var x;
+        for (x in person) {
+            console.log(person[x]);
+        }
+
+        /* output : 
+            Gun Gun
+            Febrianza
+            28
+        */
+
+        //  6. Date Object
+
+        // JSON & Object Literal
+
+        /* nilai yang bisa digunakan dalam JSON adalah strings, numbers, arrays, true, false, null, atau
+            JSON object lainya.
+            Di bawah ini adalah object literal :*/
+
+        {
+            name: "Gun Gun Febrianza"
+        };
+
+        /*Jika representasi object literal di atas di ubah kedalam JSON maka ini hasilnya */
+
+        //    { "name": "Gun Gun Febrianza" }; 
+
+        // Stringify
+
+        var objectLiteral = {
+            naem: "Gun Gun Febrianza",
+            age: 28,
+            city: "Bandung"
+
+        };
+
+        /*Untuk mengubah object literal, kita akan menggunakan built-in object yang dimiliki oleh
+        javascript engine yaitu JSON object. Pada JSON object kita dapat menggunakan method
+        stringify() untuk mengubah object literal ke dalam JSON :*/
+
+        var JSONData = JSON.stringify(objectLiteral);
+        console.log(typeof JSONData); // string
+        console.log(JSONData);
+
+        // Outpur { "Gun Gun Febrianza", "age" 28 , "City" : "Bandung" }
+
+        //  1. Class-based language
+
+        function person(firstname, lastname, age, eyecolor) {
+            this.firstname = fistname;
+            this.lastname = lastname;
+            this.age = age;
+            this.eyecolor = eyecolor;
+        }
+        person.prototype.getFistName = function() {
+            return this.firstname + " " + this.lastname;
+        };
+
+        /*Untuk mentrasformasikan function constructor di atas ke dalam class perhatikan kode di
+        bawah ini :*/
+
+        class person {
+            constructor(fistname, lastname, age, eyecolor) {
+                this.firstname = firstname;
+                this.lastname = lastname;
+                this.age = age;
+                this.eyecolor = eyecolor;
+
+            }
+            getName() {
+                return this.firstname + " " + this.lastname;
+            }
+        }
+
+        /*Setelah sebuah class dibuat kita dapat membuat sebuah object, masih dengan cara yang
+        sama menggunakan keyword new untuk membuat sebuah object.*/
+
+        var hooman = new person("Gun Gun", "Febriaza", 28, "Brow");
+        console.log(hooman.getName());
+        // Output : Gun Gun Febrianza
+
+        /*Di dalam sebuah class kita dapat membuat sebuah constructor dan sekumpulan methods*/
+
+        // 2. Class Declaration
+
+        class Wallet {
+            constructor(id, ballance) {
+                this.id = id;
+                this.ballance = ballance;
+
+            }
+        }
+
+        var a = new Wallet(1, 2000);
+
+        console.log(a);
+        // Walalet {id : 1, ballance : 2000}
+
+        /*Strict Mode
+        Setiap statements yang ditulis di dalam class body akan di eksekusi dengan strict mode
+        untuk meningkatkan performa.
+        Constructor
+        Constructor adalah sebuah method spesial yang digunakan untuk membuat object di
+        dalam class.
+        Sebuah class hanya memiliki constructor tunggal, membuat constructor lebih dari satu
+        akan memproduksi syntax error. Jika kita tidak membuat constructor di dalam class maka
+        default constructor akan diberikan secara otomatis.
+        Jika kita ingin memiliki constructor dengan parameter berupa sekumpulan arguments
+        secara arbitrary tanpa batas gunakan spread syntax seperti kode di bawah ini :*/
+
+        class log {
+            constructor(...agrs) {
+                console.log(agrs)
+            }
+        }
+
+        new log('data 1 ', 'data 2', 'data 3');
+        // output ['data 1', 'data 2', 'data 3',]
+
+        //  Static Method
+
+        class Wallet {
+            constructor(id, ballance) {
+                this.id = id;
+                this.ballance = ballance;
+            }
+            static getBalance() {
+                return 'Your Balance is 0';
+            }
+        }
+
+        console.log(Wallet.getBalance());
+        // Output : Your Balance is 0
+
+        /*Getter & Setter
+            Di dalam sebuah class kita dapat membangun getter & setter untuk melakukan komputasi
+            pada properties dari object yang akan diciptakan.*/
+
+
+        class Wallet {
+            constructor(id, ballance) {
+                this.id = id;
+                this.ballance = ballance;
+            }
+            get Ballance() {
+                return this.ballance;
+            }
+            set Ballance(ballance) {
+                this.ballance += ballance;
+            }
+        };
+        /*Pada kode di atas kita memiliki get & set 
+        untuk Balance untuk dapat berinteraksi
+        dengan getter & setter kita harus membuat 
+        object dari class tersebut terlebih dahulu :*/
+        const duitku = new Wallet(1, 2000);
+
+        duitku.Ballance = 2000;
+
+        /*Pada kode di atas kita memberikan nilai 
+        2000 kepada setter untuk object duitku :*/
+
+        console.log(duitku.Ballance); // 4000
+        //3. Class Expression
+
+        /*Selain membuat class dengan class declaration, 
+     kita juga dapat membuat sebuah class
+    dengan class expression. Terdapat dua class
+    expression yaitu unnamed class & named class*/
+
+        // Unnamed Class
+        /*Di bawah ini adalah contoh membuat class 
+        expression yang berbasis unnamed class :*/
+
+        let mywallet = class {
+            constructor(id, ballance) {
+                this.id = id;
+                this.ballance = ballance;
+            }
+        };
+
+        console.log(mywallet1.name); // mywallet1
+        console.log(typeof Wallet1); // function
+
+        // Named Class
+        /*Di bawah ini adalah contoh membuat 
+        class expression yang berbasis named class : */
+
+        let mywallet2 = class Wallet {
+            constructor(id, ballance) {
+                this.id = id;
+                this.ballance = ballance;
+            }
+        };
+        console.log(Wallet2.name); // wallet
+
+        // 4. Class Inheritance
+        /*Secara teori Class inheritance adalah kemampuan suatu class untuk memberikan
+        karakteristik yang dimilikinya pada class turunannya.
+        Secara teknis dalam pemrograman javascript, property, method, static method, getter &
+        setter yang dimiliki oleh suatu class dapat diturunkan pada suatu class atau child class */
+
+        // 4. Class Inheritance
+
+        /*Secara teori Class inheritance adalah kemampuan suatu class untuk memberikan
+    karakteristik yang dimilikinya pada class turunannya.
+    Secara teknis dalam pemrograman javascript, property, method, static method, getter &
+    setter yang dimiliki oleh suatu class dapat diturunkan pada suatu class atau child class :*/
+
+        class Wallet {
+            constructor(id, ballance) {
+                this.id = id;
+                this.ballance = ballance;
+            }
+            getID() {
+                return this.id;
+            }
+            static getInfo() {
+                return 'this class contains property, method, static method, getter & setter';
+            }
+            get PropBalance() {
+                return this.ballance;
+            }
+            set PropBalance(balance) {
+                this.ballance += balance;
+            }
+        }
+
+        class Ewallet extends Wallet {
+            constructor(id, balance, type) {
+                super(id, balance);
+                this.type = type;
+            }
+        };
+
+        const mywallet = new Ewallet(1, 2000, "gopay");
+        console.log(mywallet.id); // Output : 1
+        console.log(mywallet.balance); // Output : 2000
+
+        /*Kita juga dapat mengakses method getID() yang dimiliki oleh parent class :*/
+
+        console.log(mywallet.getID()); // Output : 1
+        // Kita juga dapat mengakses static method yang dimiliki oleh parent class :
+
+        console.log(mywallet.getInfo()); // Output : 1
+        // thi class contains property, method, static ,method, getter setter
+
+        /*kita juga dapat menggunakan  getter & setter yang dimiliki oleh parent class*/
+
+        mywallet.PropBalance = 1000;
+        console.log(mywallet.PropBalance); // 3000
+
+        // Method Override 
+        /*Jika kita ingin mengganti atau menimpa method yang dimiliki oleh parent class maka kita
+dapat menggunakan method overriding strategty. Pada kode di bawah ini parent class
+memiliki method getID() :*/
+
+        class Wallet {
+            constructor(id, balance) {
+                this.id = id;
+                this.balance = balance;
+            }
+            getID() {
+                return this.id;
+            }
+        }
+
+        class Ewallet extends Wallet {
+            constructor(id, balance, type) {
+                super(id, balance);
+                this.type = type;
+            }
+            getID() {
+                return 'Your id is ${this.id}';
+            }
+        };
+        /*Pada kode di atas method getID() pada child class akan menimpa fungsi milik parent
+class, mari kita buktikan dengan menulis dan mengeksekusi kode di bawah ini :*/
+
+        const mywallet = new Ewallet(1, 2000, "gopay");
+        console.log(mywallet.getID()); // Your id is 1
+
+        // Lalu bagaimana jika kita ingin tetap memiliki fungsi original dari parrent class
+
+        class Ewallet extends Wallet {
+            constructor(id, balance, type) {
+                super(id, balance);
+                this.type = type;
+            }
+            getID() {
+                return 'Your is ${super.getID()}';
+
+            }
+        };
+
+        // Constructor Override
+        /*Selain melakukan overriding pada method kita juga dapat melakukan override pada
+constructor, jika anda sadari anda telah melakukannya sebelumnya. Pada kode di bawah
+ini kita membuat constructor pada child class yang menerima 3 parameter :*/
+        class Ewallet extends Wallet {
+            constructor(id, balance, type) {
+                super(id, balance);
+                this.type = type
+            }
+        };
+
+        /*Dua parameter yaitu id dan balance akan di passing menuju constructor yang dimiliki
+oleh parrent class dengan memanfaatkan keyword super, sementara parameter type
+digunakan di dalam constructor milik child class yaitu Ewallet.*/
+
+        // Subchapter 9 – Collection
+
+        /*Synchronous Program
+Synchronous atau Synchronized memiliki makna terhubung (connected), ketika kita
+mengeksekusi suatu task secara synchronous maka kita akan menunggu task pertama
+selesai sebelum mengeksekusi task selanjutnya.*/
+        /*Main Function adalah perumpamaan untuk memberikan ilustrasi, jika kita perhatikan dari
+            kode javascript di bawah ini. Kita membuat variabel x dan memberikan nilai berupa literal
+            1, ini adalah statement code pertama yang berjalan.*/
+
+        // var x = 1;
+        // var y = x + 4;
+        // console.log('y adalah ${y}');
+
+        /*Statement tersebut masuk ke dalam stack setelah main function karena statement var x
+        = 1 dibungkus atau berada di dalam main function. Setelah statement var x = 1
+        dieksekusi, statement tersebut berada di posisi paling atas dan akan dicabut digantikan
+        oleh statement code selanjutnya.*/
+
+        // vat x = 1; 
+        // var y = x + 4;
+        // console.log (' ya adalah ${y}');
+
+
+        /*Asynchronous Program
+Ketika kita mengeksekusi suatu task secara Asynchronously, kita bisa mengeksekusi task
+selanjutnya tanpa harus menunggu task sebelumnya selesai. Eksekusi secara
+Asynchronous membutuhkan komponen lain yaitu callback queue, fungsi callback queue
+untuk mengetahui kapan waktu yang tepat untuk mengeksekusi task atau sekumpulan
+task yang telah selesai*/
+
+        // console.log('Memulai aplikasi..');
+        // setTimeout(() => {
+        //     console.log('Di dalam callback 1 ');
+
+        // }, 2000);
+        // setTimeout9(() => {
+        //     console.log('Di dalam callback 2');
+        // }; 0);
+
+        // console.log('Selesai!');
+
+
+        /*Case Study - Global Variable
+Pada javascript sendiri memori leak bisa terjadi pada global variable :
+Jika kita membuat variabel yang tidak dideklarasikan di dalam javascript, lalu variabel
+tersebut digunakan (bahasa teknisnya referenced) maka javascript engine akan
+memperlakukan variabel tersebut sebagai global object. Perhatikan kode di bawah ini :*/
+
+        function foo(arg) {
+            bar = "some text";
+        };
+
+        // Case Study – this keyword
+
+        function foo() {
+            this.bar = "potensial accidental global";
+        }
+
+        /*Webpack
+Module bundler untuk AMD, Common
+Perhatikan pada gambar di bawah ini :*/
+
+        modul.exports = {
+            someproperty: 'test',
+            cal: function(val1, val2) {
+                return val1 + val2;
+            }
+        };
+
+
+        const lib = require('./3.example_lib.js');
+        console.log(lib.someproperty);
+        console.log(lib.cal(100, 20));
+
+        const fs = require('fs');
+
+        fs.readdir('./', 'UTF-8', (err, content) => {
+            if (err)
+                return err;
+            console.log(content);
+        })
+
+        /*Create & Export Module
+Kita akan membuat sebuah module dengan nama simple-module :*/
+
+        const getName = () => {
+            return "Maudy Ayunda"
+        };
+
+        exports.getName = getName;
+
+        /*Export Multiple Method & Value*/
+
+        const getName = () => {
+            return "Maudy Ayunda";
+        };
+
+        const getHeroSong = () => {
+            return "Perahu Kertas";
+        };
+
+        const brithday = "19 Desember 1994";
+        exports.getName = getName;
+        exports.getHeroSong = getHeroSong;
+        exports.brithday = brithday;
+
+        /*1. Callback Callback adalah suatu function yang akan dieksekusi setelah fungsi tertentu selesai
+    dieksekusi. Itulah alasan kenapa kita memberi nama call back.
+    Dalam javascript, kita dapat membangun higher-order function yaitu sebuah function
+    dapat menggunakan function lainnya sebagai argument dan memberikan return
+    function lagi.*/
+
+        const getUser = (id, Callback) => {
+
+            const user = {
+                id: id,
+                name: "Gu Gun Febriansa"
+            };
+
+            console.log("First Function Done!");
+            setTimeout(() => {
+                Callback(user);
+            }, 3000);
+        }
+
+        /*
+        First Function Done! The Execution call back
+        {id: 31, name: "Gun Gun Febrianza"}
+        */
+
+        /*2. Promise Promise sebelumnya adalah sebuah third-party library diluar core javascript, namun
+    pada akhirnya diterapkan menjadi salah satu core penting dalam bahasa pemrograman
+    javascript.
+    Pada akhirnya promise diperkenalkan dalam EcmaScript 6 sebagai native object.
+    Promise di desain untuk memecahkan permasalahan terkait asynchronous
+    programming dalam aplikasi yang akan kita buat.
+    Jika dibandingkan dengan callback, promise mempermudah kita untuk melakukan
+    asynchronous computation.
+    Promise Constructor
+    Di bawah ini adalah sebuah contoh kode promise constructor di dalam javascript : */
+
+        const promise = new Promise(function(resole, reject) {
+            if (condition) {
+                resolve(value); // succesfully resole the promise
+            } else {
+                reject(reason); // reject the promise and specify the reason
+            }
+        });
+
+        /*Parameter dari object promise adalah sebuah function yang disebut dengan executor,
+fungsi resolve dieksekusi jika promise berhasil dan fungsi reject dieksekusi jika promise
+gagal.
+Di dalam sebuah object promise terdapat dua properties yaitu :
+*/
+
+        /* 1. State Saat pertama kali kita membuat sebuah object promise nilai state adalah pending,
+        jika promise mulai digunakan state dapat berubah menjadi fulfilled atau rejected.*/
+
+
+        /*2. Result
+        Saat pertama kali kita membuat object promise nilainya adalah undefined.
+        Saat kita membuat sebuah object promise secara internal terdapat direpresentasikan
+        sebagai berikut :
+        Gambar 400 Promise Object
+        Saat executor berhasil menyelesaikan pekerjaannya terdapat satu respon yang akan
+        dieksekusi yaitu :
+        Resolve
+        Resolve adalah pre-defined function yang telah disediakan oleh javascript engine
+        untuk kita gunakan. Jika respon adalah eksekusi function resolve maka state akan
+        berubah menjadi fulfilled dan result adalah hasil dari komputasi*/
+
+
+        //Di bawah ini adalah contoh kode Promise Resolve :
+
+        const promise = new Promise(function(resolve, reject) {
+            setTimeout(() => {
+                resolve("Success!");
+            }, 1000);
+        });
+
+        promise.then(
+            (result) => console.log(result),
+            (result) => console.log(error),
+
+        );
+
+        // Jika kode di atas dieksekusi maka output yang diproduksi adalah : Success
+
+        /*Reject
+        Reject juga adalah pre-defined function yang telah disediakan oleh javascript engine
+        untuk kita gunakan. Jika respon adalah eksekusi function reject maka state akan berubah
+        menjadi rejected dan result adalah hasil dari komputasi yang berakhir error.
+        Gambar 402 Rejected Result
+        Function Resolve & Reject akan mengubah properties state dan result dari object
+        promise. Di bawah ini adalah contoh kode Promise Reject :*/
+
+
+        const promise = new Promise(function(resolve, reject) {
+            setTimeout(() => {
+                reject("Error!");
+            }, 1000);
+        });
+
+        promise.then(
+            (result) => console.log(result),
+            (result) => console.log(error),
+        );
+
+        /*Example Promise
+Kita akan membuat sebuah study kasus operasi penjumlahan antar integer, jika operand
+adalah sebuah integer maka promise harus mengeksekusi function resolve jika operand
+adalah sebuah decimal maka promise harus mengeksekusi function reject :*/
+
+        const integerAddition = (a, b) => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (Number.isInteger(a) && Number.isInteger(b)) {
+                        resolve(a + b);
+                    } else {
+                        reject("Argument must be numbers")
+                    }
+                }, 1500);
+            });
+        };
+        // Untuk menggunakan object promise di atas tulis kode di bawah ini :
+
+        integerAddition(5, 7).then(
+            (res) => {
+                console.log("Result:", res);
+            },
+            (errorMessage) => {
+                console.log(errorMessage);
+            }
+        );
+
+        /*3. Async Await
+        Ada syntax yang lebih menarik untuk digunakan jika ingin menggunakan promise yaitu
+        menggunakan konsep async/await. Pengunaan callback yang berlebihan menimbulkan
+        fenomena callback hell, kode menjadi berantakan :
+            Untuk mengatasi permasalahan ini diperkenalkanlah konsep promise dan function
+    chaining pengembangan terus berlanjut hingga akhirnya diperkenalkan konsep
+    async/await dalam V8 Engine untuk membenahi promise dan function chaining.
+    Kita dapat menggunakan await function yang dapat memberikan return berupa
+    promise dengan syarat harus dibungkus dengan async function terlebih dahulu. Seperti
+    pada kode di bawah ini :
+        */
+
+        async function get(req, res) {
+            const respon = await Request.get('https://zzz:3000')
+            if (Response.err) {
+                console.log('Error!');
+            } else {
+                console.log('fetched response');
+            }
+        }
+
+        /*Async Function
+        Untuk membuat async function kita perlu menempatkan async keyword, di bawah ini
+        adalah contoh kode async function :*/
+
+        async function f() {
+            return "Hello Moldy "
+        }
+
+        console.log(f())
+
+        // Promise {'Hello Moldy'}
+
+        /*ika kita menggunakan async function maka return yang diberikan akan menjadi
+        promise.
+        Pada kode di atas return adalah sebuah string namun akan otomatis dikonversi kedalam
+        promise secara internal oleh javascript engine, dikarenakan kita menggunakan async
+        function.| B e l a j a r D e n g a n J e n i u s - A W S & N o d e . j s – G u n G u n F e b r i a n z a
+        Untuk mendapatkan return string dari async function, kita perlu menggunakan method
+        then untuk mendapatkan resolve :*/
+
+        f().then((result) => console.log(result));
+        // Output : Hello Moldy
+
+        // Kode sebelumnya sama dengan kode di bawah ini :
+
+        async function f() {
+            // return "Hello Moldy " 
+            return promise.resolve("Hello Moldy");
+        }
+
+        f().then((result) => console.log(result));
+
+        /*Await
+        Penggunaan keyword await memberikan instruksi pada javascript engine untuk
+        menunggu sampai promise selesai beroperasi memberikan return, sebelum
+        mengeksekusi baris kode selanjutnya :*/
+
+        async function f() {
+            const objpromise = new Promise((resolve, reject) => {
+                setTimeout(() => resolve("DONE"), 1000);
+            });
+            let result = await objpromise;
+            console.log(result)
+        }
+        f();
+
+        /*Error Handling
+        Jika terjadi error pada promise dikarenakan mengalami rejection, maka kita dapat
+        menggunakan dua cara seperti pada kode di bawah ini*/
+
+        async function f() {
+            await Promise.reject(new Error("error"))
+        }
+        async function f() {
+        throw new Error ("error!")
+        };
+        
+        /*Selain menggunakan cara di atas kita juga dapat memanfaatkan try…catch seperti pada
+            kode di bawah ini :*/ 
+
+            async function f() {
+                try {
+                    let response = await fetch ("http://wrong-url");
+                }catch (error) {
+                    console.log(error);
+                }
+            }
+           f();
+
+           /*4. Top Level Await
+    Konsep dari top level await adalah usulan untuk dapat mengeksekusi await statement
+    diluar async function. Penggunaan top level await agar penggunaan await statement
+    diperlakukan seperti async function.
+    Sebelumnya jika kita menggunakan await statement di luar async function maka syntax
+    rror akan terjadi, seperti pada kode di bawah ini :*/
+
+    await Promise.resolve(console.log('Hai Maudy'));
+
+     /*Sehingga kebanyakan developer menggunakan immediately-invoked async function
+    expressions untuk dapat menggunakan await statement. Seperti pada kode di bawah
+    ini :*/
+
+   (async function ()  {
+        await  Promise (console.log('Hai Maudy'));
+        // -> Hi Maudy
+    }());
+
+    
+    </script>
+
+</body>
+
+</html>
